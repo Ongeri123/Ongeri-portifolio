@@ -1,13 +1,13 @@
-function Contact() {
+function Projects() {
     return (
         <div style={{
                 backgroundImage: "url('/bg.png')",
                 backgroundSize: 'cover',
                 height: '100vh',
             }}>
-            <h1>Contact</h1>
+            <h1>Projects</h1>
         </div>
     )
 }
 
-export default Contact;
+export default Projects;
