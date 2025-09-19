@@ -1,0 +1,41 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.home{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-bottom: 5%;
+
+}
+
+.home> h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color:white;
+    
+}
+
+.home> h2{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding-right: 9px;
+
+}
+
+.bg-img {
+  background-image: url('/port-bg.png'); 
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat; 
+  height: 100vh;               
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
