@@ -9,8 +9,13 @@ html {
 }
 
 .section {
-  min-height: 100vh;
+  height: 100vh;
   padding: 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -86,4 +91,99 @@ h1,h2{
 
 .skill:first-child {
   border-left: none;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.skill li {
+  color: white;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  color: whitesmoke;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.project-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.project-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+.project-tech {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-tech span {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
 }
