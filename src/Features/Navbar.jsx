@@ -1,15 +1,12 @@
-import { Link } from 'react-router-dom';
-
-
 function Navbar() {
     return (
-        <nav>
+        <nav className="navbar">
             <div className='nav-buttons'>
-                <Link to="/"><button>Home</button></Link>
-                <Link to="/Skills"><button>Skills</button></Link>
-                <Link to="/Projects"><button>Projects</button></Link>
-                <Link to="/Experience"><button>Experience</button></Link>
-                <Link to="/Contact"><button>Contact</button></Link>
+                <a href="#home"><button>Home</button></a>
+                <a href="#skills"><button>Skills</button></a>
+                <a href="#projects"><button>Projects</button></a>
+                <a href="#experience"><button>Experience</button></a>
+                <a href="#contact"><button>Contact</button></a>
             </div>
         </nav>
     )
