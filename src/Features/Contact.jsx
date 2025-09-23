@@ -33,19 +33,20 @@ function Contact() {
                 <div className="contact-info">
                     <h3>Get In Touch</h3>
                     <div className="contact-details">
-                        <p>📧 newton.orina@email.com</p>
+                        <p>✉️ ongerinewton10@gmail.com</p>
+                        <p>📞 +254 113734235</p>
                         <p>📍 Nairobi, Kenya</p>
                     </div>
                     
                     <div className="social-links">
-                        <a href="https://linkedin.com/in/newton-orina" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/newton-orina/" target="_blank" rel="noopener noreferrer">
                             💼 LinkedIn
                         </a>
-                        <a href="https://github.com/newton-orina" target="_blank" rel="noopener noreferrer">
-                            🐙 GitHub
+                        <a href="https://github.com/Ongeri123" target="_blank" rel="noopener noreferrer">
+                           💻  GitHub
                         </a>
-                        <a href="https://twitter.com/newton-orina" target="_blank" rel="noopener noreferrer">
-                            🐦 Twitter
+                        <a href="https://www.instagram.com/_o.n.g.e.r.i/" target="_blank" rel="noopener noreferrer">
+                           🅾  Instagram
                         </a>
                     </div>
                 </div>
