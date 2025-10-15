@@ -5,7 +5,7 @@ function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'skills', 'projects', 'experience', 'contact'];
+            const sections = ['home', 'skills', 'projects', 'design_gallery', 'contact'];
             const scrollPosition = window.scrollY + 100;
 
             for (let section of sections) {
@@ -38,8 +38,8 @@ function Navbar() {
                 <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>
                     <button>Projects</button>
                 </a>
-                <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>
-                    <button>Experience</button>
+                <a href="#design_gallery" className={activeSection === 'design_gallery' ? 'active' : ''}>
+                    <button>Design Gallery</button>
                 </a>
                 <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>
                     <button>Contact</button>
