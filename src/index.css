@@ -87,7 +87,7 @@ button {
   background: rgba(255, 255, 255, 0.1);
 }
 
-h1,h2{
+h1,h2,p{
   color: white;
 }
 
@@ -286,4 +286,85 @@ h1,h2{
 .contact-form button:hover {
   background: white;
   color: black;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .content > h1 {
+    font-size: 3rem;
+  }
+  
+  .content > h2 {
+    font-size: 1.2rem;
+  }
+  
+  .nav-buttons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-buttons button {
+    font-size: 1rem;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+    margin: 50px 20px;
+    height: auto;
+  }
+  
+  .project-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .projects-container {
+    padding: 0 20px;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .section {
+    height: auto;
+    min-height: 100vh;
+    padding: 80px 10px 20px;
+  }
+  
+  .home {
+    position: relative;
+    height: auto;
+    top: auto;
+    left: auto;
+    transform: none;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content > h1 {
+    font-size: 2.5rem;
+  }
+  
+  .nav-buttons {
+    gap: 15px;
+  }
+  
+  .nav-buttons button {
+    font-size: 0.9rem;
+  }
+  
+  .project-card {
+    padding: 20px;
+  }
+  
+  .skills-container {
+    margin: 30px 10px;
+  }
+  
+  .skill {
+    padding: 20px;
+  }
 }
