@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Skills from './Skills';
 import Projects from './Projects';
-import Experience from './Experience';
 import Contact from './Contact';
+import Design_Gallery from './Design_Gallery';
 
 function Home() {
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -47,8 +47,8 @@ function Home() {
                 <Projects />
             </section>
 
-            <section id="experience" className="section">
-                <Experience />
+            <section id="design_gallery" className="section">
+                <Design_Gallery />
             </section>
 
             <section id="contact" className="section">
