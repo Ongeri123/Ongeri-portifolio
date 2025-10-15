@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Navbar from './Navbar';
-import Skills from './Skills';
-import Projects from './Projects';
-import Contact from './Contact';
-import Design_Gallery from './Design_Gallery';
+
+const Skills = React.lazy(() => import('./Skills'));
+const Projects = React.lazy(() => import('./Projects'));
+const Contact = React.lazy(() => import('./Contact'));
+const Design_Gallery = React.lazy(() => import('./Design_Gallery'));
 
 function Home() {
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -40,19 +41,27 @@ function Home() {
             </section>
 
             <section id="skills" className="section">
-                <Skills />
+                <Suspense fallback={<div className="loading">Loading...</div>}>
+                    <Skills />
+                </Suspense>
             </section>
 
             <section id="projects" className="section">
-                <Projects />
+                <Suspense fallback={<div className="loading">Loading...</div>}>
+                    <Projects />
+                </Suspense>
             </section>
 
             <section id="design_gallery" className="section">
-                <Design_Gallery />
+                <Suspense fallback={<div className="loading">Loading...</div>}>
+                    <Design_Gallery />
+                </Suspense>
             </section>
 
             <section id="contact" className="section">
-                <Contact />
+                <Suspense fallback={<div className="loading">Loading...</div>}>
+                    <Contact />
+                </Suspense>
             </section>
 
             {showScrollTop && (

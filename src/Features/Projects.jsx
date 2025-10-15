@@ -18,7 +18,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="project-image-container">
-                        <img src="/project1.png" alt="Project 1" />
+                        <img src="/project1.png" alt="Project 1" loading="lazy" />
                     </div>
                 </div>
                 <div className="project-row">
@@ -31,7 +31,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="project-image-container">
-                        <img src="/project2.png" alt="Project 2" />
+                        <img src="/project2.png" alt="Project 2" loading="lazy" />
                     </div>
                 </div>
                 <div className="project-row">
@@ -44,7 +44,7 @@ function Projects() {
                         </div>
                     </div>
                     <div className="project-image-container">
-                        <img src="/project3.png" alt="Project 3" />
+                        <img src="/project3.png" alt="Project 3" loading="lazy" />
                     </div>
                 </div>
             </div>
