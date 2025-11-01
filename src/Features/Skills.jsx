@@ -1,11 +1,13 @@
 function Skills() {
     return (
         <div style={{
-                backgroundImage: "url('/bg.png')",
+            //backgroundImage: "url('/bg.png')",
+                backgroundColor: "black",
                 backgroundSize: 'cover',
                 height: '100vh',
                 padding: '80px 20px 20px',
             }}>
+
             <h1 style={{textAlign: 'center', marginBottom: '50px'}}>Skills</h1>
             <div className="skills-container">
                 <div className="skill">
